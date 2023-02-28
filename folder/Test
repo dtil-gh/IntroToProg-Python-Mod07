@@ -1,0 +1,86 @@
+import pickle
+
+file_name_str = "donationList.dat"
+donorInfo = {}  # dictionary object holding a string and float {Name, Value}
+donatorList = []
+
+
+def add_data_to_file(file_name, list_of_rows):
+    objFile = open(file_name, "ab")
+    pickle.dump(list_of_rows, objFile)
+    objFile.close()
+
+
+def read_data_from_file(file_name, list_of_rows):
+
+    list_of_rows = []  # Clears current data
+
+    tempfile = []  # Temp list
+    try:
+        objFile = open(file_name, "rb")
+    except FileNotFoundError:
+        print("There is no existing donation list file.\nStarting new file.")
+        return list_of_rows
+    while True:
+        try:
+            tempfile = pickle.load(objFile)
+            name, donation = tempfile[0].values()
+            list_of_rows.append({"Name": str(name).title(), "Donation": float(donation)})
+        except EOFError:
+            print("Data has been uploaded from the file.")
+            objFile.close()
+            return list_of_rows
+            break
+
+def add_entry_to_list(donorName, donorValue, list_of_rows):
+
+    row = {"Name": str(donorName), "Donation": float(donorValue)}
+    list_of_rows.append(row)
+    print("%s has made a donation of $%.2f!\n" % (donorName, donorValue))
+    return list_of_rows
+
+
+def input_new_entry():
+
+
+    name = input("Name of Donor? ")
+
+    while True:
+        try:
+            donation = input("Donation value? $")
+            if donation.find('.') == True:
+                cents = donation.split(".")
+                if len(cents[1]) > 2:
+                    raise Exception("Cannot have a fraction of a penny!")
+            donation = "%.2f" % float(donation)
+            break
+        except ValueError as e:
+            print("Enter a valid $ amount.")
+    print(name, donation)
+    return name, donation
+
+
+def display_donator_list(list_of_rows):
+
+    print("\n******* The current donators are: *******")
+    for row in list_of_rows:
+        print(row["Name"] + " - $" + str(row["Donation"]))
+    print("*******************************************")
+    print()  # Add an extra line for looks
+
+
+
+# Main Body
+
+donatorList = read_data_from_file(file_name=file_name_str, list_of_rows=donatorList)
+while True:
+    display_donator_list(donatorList)
+
+    name, donation = input_new_entry()
+    add_entry_to_list(name, donation, donatorList)
+    exit = input("Y/N")
+    if exit.lower() == 'y':
+        break
+#add_data_to_file(file_name_str, donatorList)
+
+
