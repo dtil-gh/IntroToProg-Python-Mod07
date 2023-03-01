@@ -3,6 +3,7 @@
 **Date:** *03.01.2023*  
 *IT FDN 100 A*  
 *Assignment 07*  
+*https://github.com/dtil-gh/IntroToProg-Python-Mod07*
 
 ## Introduction
 In this assignment, I will utilize the lessons learned about pickling and exception handling to build a python script that will read a binary file that contains donation information regarding the name of donor and donation amount and write additional information in binary to the file. Similarly, to previous assignment, I will use classes and functions to operate this script.
