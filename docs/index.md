@@ -227,7 +227,7 @@ def exit_option():
 ## Testing Script
 I will test the script in PyCharm with no existing file. (Figure 11) In this test, I will also include how various inputs for name input and donation. As we can see in Figure 12, the file is in binary form as it cannot be humanly read.
 
-![Testing Script in PyCharm](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure11.png "Testing Script in PyCharm")
+![Testing Script in PyCharm](Figure11.png "Testing Script in PyCharm")
 #### Figure 11: Testing Script in PyCharm 
 
 ![PyCharm Binary File Input](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure12.png "PyCharm Binary File Output")
