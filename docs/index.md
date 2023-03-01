@@ -1,8 +1,8 @@
 # Donation List Python Script
-**Dev:** *DTil*
-**Date:** *03.01.2023*
-*IT FDN 100 A*
-*Assignment 07*
+**Dev:** *DTil*  
+**Date:** *03.01.2023*  
+*IT FDN 100 A*  
+*Assignment 07*  
 
 ## Introduction
 In this assignment, I will utilize the lessons learned about pickling and exception handling to build a python script that will read a binary file that contains donation information regarding the name of donor and donation amount and write additional information in binary to the file. Similarly, to previous assignment, I will use classes and functions to operate this script.
@@ -226,21 +226,21 @@ def exit_option():
 ## Testing Script
 I will test the script in PyCharm with no existing file. (Figure 11) In this test, I will also include how various inputs for name input and donation. As we can see in Figure 12, the file is in binary form as it cannot be humanly read.
 
-
+![Testing Script in PyCharm](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure11.png "Testing Script in PyCharm")
 #### Figure 11: Testing Script in PyCharm 
 
- 
+![PyCharm Binary File Input](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure12.png "PyCharm Binary File Output")
 #### Figure 12: PyCharm Binary File Output
 
 For Command Shell testing, I will use the binary file that was created from the above PyCharm test and perform similar inputs to see how the script handles errors. (Figure 13) As we can see from Figure 14, it has changed from Figure 12 due to my test run in Shell. Running the program again, we can see that the binary file is being loaded correctly. (Figure 15)
 
- 
+![Testing Script in Command Shell](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure13.png "Testing Script in Command Shell")
 #### Figure 13: Testing Script in Command Shell
 
- 
+![Shell Binary File Output](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure14.png "Shell Binary File Output") 
 #### Figure 14: Shell Binary File Output
 
- 
+![Running Script to Verify Change](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure15.png "Running Script to Verify Change") 
 #### Figure 15: Running Script to Verify Change 
 
 ## Conclusion
