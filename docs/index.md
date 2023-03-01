@@ -1,5 +1,5 @@
 # Donation List Python Script
-**Dev:** *DTil*  
+**Dev:** *Davy Til*  
 **Date:** *03.01.2023*  
 *IT FDN 100 A*  
 *Assignment 07*  
