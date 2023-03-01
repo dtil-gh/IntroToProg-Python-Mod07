@@ -230,18 +230,18 @@ I will test the script in PyCharm with no existing file. (Figure 11) In this tes
 ![Testing Script in PyCharm](Figure11.png "Testing Script in PyCharm")
 #### Figure 11: Testing Script in PyCharm 
 
-![PyCharm Binary File Input](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure12.png "PyCharm Binary File Output")
+![PyCharm Binary File Input](Figure12.png "PyCharm Binary File Output")
 #### Figure 12: PyCharm Binary File Output
 
 For Command Shell testing, I will use the binary file that was created from the above PyCharm test and perform similar inputs to see how the script handles errors. (Figure 13) As we can see from Figure 14, it has changed from Figure 12 due to my test run in Shell. Running the program again, we can see that the binary file is being loaded correctly. (Figure 15)
 
-![Testing Script in Command Shell](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure13.png "Testing Script in Command Shell")
+![Testing Script in Command Shell](Figure13.png "Testing Script in Command Shell")
 #### Figure 13: Testing Script in Command Shell
 
-![Shell Binary File Output](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure14.png "Shell Binary File Output") 
+![Shell Binary File Output](Figure14.png "Shell Binary File Output") 
 #### Figure 14: Shell Binary File Output
 
-![Running Script to Verify Change](https://github.com/dtil-gh/IntroToProg-Python-Mod07/blob/main/docs/Figure15.png "Running Script to Verify Change") 
+![Running Script to Verify Change](Figure15.png "Running Script to Verify Change") 
 #### Figure 15: Running Script to Verify Change 
 
 ## Conclusion
